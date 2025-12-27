@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .sidebar {
@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1;
     padding: 16px;
     color: white;
-    height: 100vh;
     z-index: 3;
 }
 
@@ -117,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5rem;
 }
 
-.profile-pic {
+.account-pic {
     background-color: black;
     border-radius: 48px;
     justify-self: center;
@@ -131,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 4px 16px;
 }
 
-.greeting > .profile-pic {
+.greeting > .account-pic {
     grid-row: 1 / 3;
     justify-self: end;
     align-self: center;
@@ -168,7 +167,7 @@ button {
     background-color: rgb(225, 225, 225);
     display: grid;
     grid-template-columns: 7fr 3fr;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
         "projects announcements"
         "projects trending";
@@ -202,7 +201,6 @@ button {
     border-radius: 8px;
     border-left: 8px solid gold;
     display: grid;
-    height: 150px;
     grid-template-rows: 1fr 3fr 36px;
 }
 
@@ -223,7 +221,6 @@ button {
     background-color: white;
     padding: 24px;
     border-radius: 8px;
-    height: 300px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -231,6 +228,7 @@ button {
 hr {
     border: none;
     border-top: 1px solid rgb(167, 167, 167);
+    margin: 4px 0;
 }
 
 .trending {
@@ -246,28 +244,29 @@ hr {
 
 .trending-grid {
     display: grid;
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .profile {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    height: 50px;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 6px;
 }
 
-.pic {
+.profile-pic {
     border-radius: 64px;
     grid-column: 1;
     grid-row: 1 / 3;
 }
 
-.profile.tag {
+.profile-tag {
     grid-column: 2;
     grid-row: 1 / 2;
 }
 
-.profile.description {
+.profile-description {
     grid-column: 2;
     grid-row: 2 / 3;
 }
