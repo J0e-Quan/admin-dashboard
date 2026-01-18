@@ -18,3 +18,7 @@ Live demo link: https://j0e-quan.github.io/admin-dashboard/
  
 ## Gallery:
 ![Picture showing the whole layout of the page](./readme-assets/Screenshot_27-12-2025_232823_wsl.localhost.jpeg)
+
+## Getting started:
+1. clone this repo in your desired folder: `git clone https://github.com/J0e-Quan/admin-dashboard.git`
+2. open index.html in your browser to run the code
